@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+   
+   		<servlet>
+   			<servlet-name>inquiryInsert</servlet-name>
+   			<servlet-class>com.inquiry.inquiryInsert</servlet-class>
+   		</servlet>
+   		
+   		<servlet-mapping>
+   		<servlet-name>inquiryInsert</servlet-name>
+   		<url-pattern>/Insert</url-pattern>		
+   		</servlet-mapping>
+   		
+   		<servlet>
+   		<servlet-name>inqUpdate</servlet-name>
+   		<servlet-class>com.inquiry.updateInqServlet</servlet-class>
+   		</servlet>
+   		
+   		<servlet-mapping>
+   		<servlet-name>inqUpdate</servlet-name>
+   		<url-pattern>/update</url-pattern>
+   		</servlet-mapping>
+   		
+   		<servlet>
+   			<servlet-name>inqDelete</servlet-name>
+   			<servlet-class>com.inquiry.DeleteInqServlet</servlet-class>		
+   		</servlet>
+         
+         <servlet-mapping>
+   		<servlet-name>inqDelete</servlet-name>
+   		<url-pattern>/delete</url-pattern>
+   		</servlet-mapping>
+         
+</web-app>
